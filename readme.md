@@ -9,24 +9,27 @@ This will be most useful for Enigma Genesis Game Candidates, although anyone run
 <br/>
 
 # How to use
-You are not obligated to run the SecretNode-Stats script on the same system that runs your witness node.
-Firstly, you will need to install powershell on the machine which you choose to monitor your **secretnode** from.
+You are not obligated to run the **SecretNode-Stats** script on the same system that runs your witness node.
+Firstly, you will need to install powershell on the machine which you choose to monitor your **SecretNode** from.
 
-   ## Installing Powershell on Ubuntu 16.04
-      # Import the public repository GPG keys
-        curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+   ## Installing Powershell on Ubuntu 18.04
+      # Download the Microsoft repository GPG keys
+        wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb
 
-      # Register the Microsoft Ubuntu repository
-        curl https://packages.microsoft.com/config/ubuntu/16.04/prod.list | sudo tee /etc/apt/sources.list.d/microsoft.list
+      # Register the Microsoft repository GPG keys
+        sudo dpkg -i packages-microsoft-prod.deb
 
-      # Update apt-get
+      # Update the list of products
         sudo apt-get update
+
+      # Enable the "universe" repositories
+        sudo add-apt-repository universe
 
       # Install PowerShell
         sudo apt-get install -y powershell
 
       # Start PowerShell
-        powershell
+        pwsh
    
    ## Installing Powershell on Mac OSX
       
@@ -42,4 +45,6 @@ Firstly, you will need to install powershell on the machine which you choose to 
       # git clone https://github.com/chainofsecrets/secretnode-stats
       
 ## Configuring SecretNode-Stats
+
+TBD 
    
