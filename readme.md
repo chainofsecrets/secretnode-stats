@@ -1,6 +1,9 @@
 <h1 align="center">
   SecretNode-Stats
 </h1>
+<h5 align="center">
+  Built by ChainofSecrets.org
+</h1>
 SecretNode-Stats is a monitoring script built in Powershell to check and monitor that your SecretNode is logged in and active ready to produce blocks in an epoch. 
 The script will send an email alert to you if your node has logged out (which will cause it to miss an epoch task) 
 
