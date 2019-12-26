@@ -45,7 +45,8 @@ Firstly, you will need to install powershell on the machine which you choose to 
    
   
 ## Copying the SecretNode-Stats code using git
-      # git clone https://github.com/chainofsecrets/secretnode-stats
+      # 
+      git clone https://github.com/chainofsecrets/secretnode-stats
       
 ## Configuring SecretNode-Stats
 
