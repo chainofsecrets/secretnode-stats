@@ -58,5 +58,30 @@ Firstly, you will need to install powershell on the machine which you choose to 
 
       #Please Change the WorkerID to your own SecretNode Operating Address.
       $WorkerID = "0xf935870592c5dd34930a291a24abbcfd145a34cb"
+      
+      # Configure this Minute value, so that script can run on this interval, 5 value denotes that script will wait for 5 minute 
+      # to re-check, Change according to the requirement can be any decimal value 1,2,3,4,5 etc...
+      $CheckAfterEveryMin = 2
+
+      #Configure the from email id
+      $EmailFrom = "user@domain.net"
+
+      #Configure email id to whom you want to send email
+      $EmailTo = "user@domain.net"
+
+      #Configure the subject line
+      $EmailSubject = "[Alert] SecretNode has Logged Out"
+
+      #Configure SMTP server either name or IP address 
+      $SMTPServer = "smtphost.domain.net"
+
+      #Default SMTP port is 25 but incase SMTP is running on any other port, configure this $smtpport value
+      $SMTPPort = 25
+
+      #Configure the user name who is authorized to send an email
+      $SMTPAuthUsername = "username"
+
+      #Configure password of the user
+      $SMTPAuthPassword = "password"
 
    
