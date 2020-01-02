@@ -84,4 +84,15 @@ Firstly, you will need to install powershell on the machine which you choose to 
       #Configure password of the user
       $SMTPAuthPassword = "password"
 
-   
+   ## Running SecretNode-Stats
+      # Change into SecretNode-Stats Directory
+        cd Secretnode-Stats/
+        
+      # Change Permissions to enable running
+        sudo chmod +x secretnode-stat.ps1
+        
+      # Start Powershell
+        powershell
+        
+      # Execute SecretNode-Stats
+        ./secretnode-stat.ps1
