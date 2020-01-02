@@ -45,10 +45,18 @@ Firstly, you will need to install powershell on the machine which you choose to 
    
   
 ## Copying the SecretNode-Stats code using git
-      # 
-      git clone https://github.com/chainofsecrets/secretnode-stats
+      # Clone ChainofSecrets Secretnode-Stats Repo
+      git clone https://github.com/chainofsecrets/secretnode-stats.git
       
 ## Configuring SecretNode-Stats
+     
+      # Change into Secretnode-Stats Directory
+        cd Secretnode-Stats/
+        vi secretnode-stat.ps1
+        
+   **`EDIT THE FOLLOWING CONFIG LINES IN THE SCRIPT TO YOUR NEEDS. MAKE SURE TO CHANGE TO YOUR ENIGMA OPERATING NODE ADDRESS`**
 
-TBD 
+      #Please Change the WorkerID to your own SecretNode Operating Address.
+      $WorkerID = "0xf935870592c5dd34930a291a24abbcfd145a34cb"
+
    
