@@ -92,7 +92,7 @@ Firstly, you will need to install powershell on the machine which you choose to 
         sudo chmod +x secretnode-stat.ps1
         
       # Start Powershell
-        powershell
+        pwsh
         
       # Execute SecretNode-Stats
         ./secretnode-stat.ps1
